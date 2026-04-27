@@ -190,7 +190,7 @@
         <section class="success-card">
             <p style="color: var(--accent); font-weight: 600; font-size: 0.9rem;">✓ Berhasil dipendekkan!</p>
             <div class="new-link-wrap">
-                <a href="{{ session('new_link') }}" target="_blank" class="new-link">{{ session('new_link') }}</a>
+                <a href="{{ session('new_link') }}" target="_blank" class="new-link">{{ str_replace(['http://', 'https://'], '', session('new_link')) }}</a>
                 <button class="copy-btn" onclick="copyToClipboard('{{ session('new_link') }}', this)">Salin</button>
             </div>
         </section>
