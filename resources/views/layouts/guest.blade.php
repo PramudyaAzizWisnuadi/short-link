@@ -101,6 +101,12 @@
         a:hover { color: white !important; }
 
         .checkbox-label { color: var(--text-dim) !important; font-size: 0.85rem; }
+
+        @media (max-width: 640px) {
+            .auth-card { padding: 1.5rem; border-radius: 16px; }
+            .logo-text { font-size: 2rem; margin-bottom: 1.5rem; }
+            .guest-container { padding: 1rem; }
+        }
     </style>
 </head>
 <body>

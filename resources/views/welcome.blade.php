@@ -65,6 +65,19 @@
             header { padding: 1rem; }
             .logo { font-size: 1.2rem; }
             nav a { margin-left: 0.8rem; font-size: 0.8rem; }
+            
+            main { padding: 2rem 1rem; gap: 2rem; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 0.95rem; padding: 0 0.5rem; }
+            
+            .card { padding: 1.5rem; border-radius: 16px; }
+            .domain-prefix { padding: 0 0.8rem; font-size: 0.8rem; height: 3rem; }
+            input { padding: 0.8rem 1rem; font-size: 0.95rem; }
+            button.btn-primary { padding: 1rem; font-size: 0.95rem; }
+            
+            .new-link-wrap { flex-direction: column; gap: 1rem; align-items: flex-start; }
+            .new-link { font-size: 1rem; word-break: break-all; }
+            .copy-btn { width: 100%; padding: 0.75rem; }
         }
 
         .logo {

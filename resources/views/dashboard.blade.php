@@ -5,11 +5,11 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
+    <div class="py-6 sm:py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <!-- Stats overview maybe? Simple table for now -->
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-8">
+                <div class="p-4 sm:p-8">
                     @if($shortLinks->count() > 0)
                         <div class="overflow-x-auto">
                             <table class="w-full text-left border-collapse">
@@ -44,7 +44,7 @@
                                                 {{ $link->created_at->format('d M Y') }}
                                             </td>
                                             <td class="py-5 px-4 text-right">
-                                                <button onclick="copyToClipboard('{{ url($link->short_code) }}', this)" class="text-xs font-semibold bg-white/10 hover:bg-emerald-500 transition-all text-white px-4 py-2 rounded-lg">
+                                                <button onclick="copyToClipboard('{{ url($link->short_code) }}', this)" class="text-xs font-semibold bg-white/10 hover:bg-emerald-500 transition-all text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg">
                                                     Copy
                                                 </button>
                                             </td>
